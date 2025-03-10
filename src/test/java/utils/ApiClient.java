@@ -1,6 +1,9 @@
 package utils;
 
+import com.google.gson.JsonObject;
 import io.restassured.response.Response;
+import org.json.JSONObject;
+
 import static io.restassured.RestAssured.*;
 
 import java.util.Map;
@@ -17,7 +20,7 @@ public class ApiClient {
                 .response();
     }
 
-    public static Response post(String endpoint, Map<String, String> headers, Object body) {
+    public static Response post(String endpoint, Map<String, String> headers, String body) {
         return given()
                 .headers(headers)
                 .body(body)
