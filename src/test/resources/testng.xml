@@ -2,7 +2,8 @@
 <suite name="API Test Suite" parallel="methods">
     <test name="User API Tests">
         <classes>
-            <class name="API.GetAPITest"/>
+            <class name="API.TS01_GetUser"/>
+            <class name="API.TS02_CreateUser"/>
         </classes>
     </test>
 </suite>
