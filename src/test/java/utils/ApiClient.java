@@ -1,11 +1,7 @@
 package utils;
 
-import com.google.gson.JsonObject;
 import io.restassured.response.Response;
-import org.json.JSONObject;
-
 import static io.restassured.RestAssured.*;
-
 import java.util.Map;
 
 public class ApiClient {
